@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <script src="https://kit.fontawesome.com/d24b29829e.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onresize="responsive()">
     <!-- header-start -->
     <div class="header row">
         <div class="nav-left row">
@@ -24,6 +25,8 @@
             <div class="mic icon"><i class="fa-solid fa-microphone"></i></div>
         </div>
         <div class="nav-right row">
+            <div class="search-mini-icon hide"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="mic-mini hide"><i class="fa-solid fa-microphone"></i></div>
             <div class="icon"><i class="fa-solid fa-video"></i></div>
             <div class="icon"><i class="fa-regular fa-bell"></i></div>
             <div><p>M</p></div>
@@ -75,12 +78,14 @@
      
     </div>
     <!-- sidebar-min -->
-    <div class="sidebar-min">
+    <div class="sidebar-min show">
         <div class="list-sidebar-min">
             <a href=""> <i class="fa-solid fa-house"></i><p>Trang chủ</p></img></a>
             <a href=""> <i class="fa-regular fa-compass"></i><p>Khám phá</p></img></a>
-            <a href=""> <i class="fa-regular fa-circle-play"></i><p>Khám phá</p></img></a>
+            <a href=""> <i class="fa-regular fa-circle-play"></i><p>Music</p></img></a>
             <a href=""> <i class="fa-brands fa-square-youtube"></i><p>Kênh đăng ký</p></img></a>
+            <a href=""> <i class="fa-regular fa-heart"></i><p>Yêu thích</p></img></a>
+            
         </div>
     </div>
     <!-- sidebar-end -->
@@ -112,6 +117,50 @@
         <div class="container">
             <div class="list-content">
                 <div class="div-content">
+                    <img src="./assets/img/content1.webp" alt="" srcset="">
+                    <div class="video-info">
+                    <img src="./assets/img/logocontent1.jpg" alt="" srcset="">
+                    <div class="text-content">
+                        <h3>Web Developer Reacts to Incredible Personal Websites // Personal Portfolios</h3>
+                        <p>Servet Gulnaroglu</p>
+                        <p><p>134 N lượt xem • 1 tháng trước</p></p>
+                    </div>
+                    </div>
+                </div>
+                <div class="div-content">
+                    <img src="./assets/img/content2.webp" alt="" srcset="">
+                    <div class="video-info">
+                    <img src="./assets/img/logocontent12.jpg" alt="" srcset="">
+                    <div class="text-content">
+                        <h3>Web Developer Reacts to Incredible Personal Websites // Personal Portfolios</h3>
+                        <p>Servet Gulnaroglu</p>
+                        <p><p>134 N lượt xem • 1 tháng trước</p></p>
+                    </div>
+                    </div>
+                </div>
+                <div class="div-content">
+                    <img src="./assets/img/content11.webp" alt="" srcset="">
+                    <div class="video-info">
+                    <img src="./assets/img/logocontent1.jpg" alt="" srcset="">
+                    <div class="text-content">
+                        <h3>5 Trò Chơi Ảo Thuật Thú Vị Tự Làm Ở Nhà</h3>
+                        <p>Servet Gulnaroglu</p>
+                        <p><p>134 N lượt xem • 1 tháng trước</p></p>
+                    </div>
+                    </div>
+                </div>
+                <div class="div-content">
+                    <img src="./assets/img/content4.webp" alt="" srcset="">
+                    <div class="video-info">
+                    <img src="./assets/img/logocontent2.jpg" alt="" srcset="">
+                    <div class="text-content">
+                        <h3>(Paper Bride 3 #1) Đưa vợ Kiều Đồng về quê thăm nhà và cái kết bất ổn.</h3>
+                        <p>MixiGaming</p>
+                        <p><p>134 N lượt xem • 1 tháng trước</p></p>
+                    </div>
+                    </div>
+                </div>
+                <div class="div-content">
                     <img src="./assets/img/content5.webp" alt="" srcset="">
                     <div class="video-info">
                     <img src="./assets/img/logocontent5.jpg" alt="" srcset="">
@@ -127,7 +176,7 @@
                     <div class="video-info">
                     <img src="./assets/img/logocontent6.jpg" alt="" srcset="">
                     <div class="text-content">
-                        <h3>Web Developer Reacts to Incredible Personal Websites // Personal Portfolios</h3>
+                        <h3>5 Trò Chơi Ảo Thuật Thú Vị Tự Làm Ở Nhà</h3>
                         <p>Servet Gulnaroglu</p>
                         <p><p>134 N lượt xem • 1 tháng trước</p></p>
                     </div>
@@ -155,14 +204,12 @@
                     </div>
                     </div>
                 </div>
-            </div>
-            <div class="list-content">
                 <div class="div-content">
                     <img src="./assets/img/content9.webp" alt="" srcset="">
                     <div class="video-info">
                     <img src="./assets/img/logocontent9.jpg" alt="" srcset="">
                     <div class="text-content">
-                        <h3>Web Developer Reacts to Incredible Personal Websites // Personal Portfolios</h3>
+                        <h3>5 Trò Chơi Ảo Thuật Thú Vị Tự Làm Ở Nhà</h3>
                         <p>Servet Gulnaroglu</p>
                         <p><p>134 N lượt xem • 1 tháng trước</p></p>
                     </div>
@@ -184,7 +231,7 @@
                     <div class="video-info">
                     <img src="./assets/img/logocontent11.jpg" alt="" srcset="">
                     <div class="text-content">
-                        <h3>Web Developer Reacts to Incredible Personal Websites // Personal Portfolios</h3>
+                        <h3>Người VIỆT Nhỏ Bé Có Thể Vượt Qua Được Bài Kiểm Tra Thể Lực</h3>
                         <p>Servet Gulnaroglu</p>
                         <p><p>134 N lượt xem • 1 tháng trước</p></p>
                     </div>
@@ -201,7 +248,7 @@
                     </div>
                     </div>
                 </div>
-            </div>
+            </div> 
             
             <div class="short-content">
                 <hr>
@@ -209,7 +256,7 @@
                     <div class="right row"><img src="./assets/img/shorticon.jpg" alt=""><h3>Shorts</h3></div>
                     <div class="left"><i class="fa-solid fa-x"></i></div>
                 </div>
-                <div class="short-list row">
+                <div class="short-list">
                     <div class="short-item">
                         <img src="./assets/img/short1.webp" alt="" srcset="">
                         <div class="row"> <h3>Create a Internet Speed Tester </h3>
@@ -252,13 +299,37 @@
                             <i class="fa-solid fa-list-ul"></i></div>
                         <p>75 N lượt xem</p>
                     </div>
+                    <div class="short-item">
+                        <img src="./assets/img/short8.webp" alt="" srcset="">
+                        <div class="row"> <h3>Create a Internet Speed Tester </h3>
+                            <i class="fa-solid fa-list-ul"></i></div>
+                        <p>75 N lượt xem</p>
+                    </div>
+                    <div class="short-item">
+                        <img src="./assets/img/short9.webp" alt="" srcset="">
+                        <div class="row"> <h3>Create a Internet Speed Tester </h3>
+                            <i class="fa-solid fa-list-ul"></i></div>
+                        <p>75 N lượt xem</p>
+                    </div>
+                    <div class="short-item">
+                        <img src="./assets/img/short10.webp" alt="" srcset="">
+                        <div class="row"> <h3>Create a Internet Speed Tester </h3>
+                            <i class="fa-solid fa-list-ul"></i></div>
+                        <p>75 N lượt xem</p>
+                    </div>
+                    <div class="short-item">
+                        <img src="./assets/img/short11.webp" alt="" srcset="">
+                        <div class="row"> <h3>Create a Internet Speed Tester </h3>
+                            <i class="fa-solid fa-list-ul"></i></div>
+                        <p>75 N lượt xem</p>
+                    </div>
                 </div>
+                <div class="down"><i class="fa-solid fa-angle-down"></i></div>
                 <hr>
             </div>
-           
             <div class="list-content">
                 <div class="div-content">
-                    <img src="./assets/img/content1.webp" alt="" srcset="">
+                    <img src="./assets/img/content13.webp" alt="" srcset="">
                     <div class="video-info">
                     <img src="./assets/img/logocontent1.jpg" alt="" srcset="">
                     <div class="text-content">
@@ -269,18 +340,18 @@
                     </div>
                 </div>
                 <div class="div-content">
-                    <img src="./assets/img/content2.webp" alt="" srcset="">
+                    <img src="./assets/img/content14.webp" alt="" srcset="">
                     <div class="video-info">
                     <img src="./assets/img/logocontent12.jpg" alt="" srcset="">
                     <div class="text-content">
-                        <h3>Web Developer Reacts to Incredible Personal Websites // Personal Portfolios</h3>
+                        <h3>Người VIỆT Nhỏ Bé Có Thể Vượt Qua Được Bài Kiểm Tra Thể Lực</h3>
                         <p>Servet Gulnaroglu</p>
                         <p><p>134 N lượt xem • 1 tháng trước</p></p>
                     </div>
                     </div>
                 </div>
                 <div class="div-content">
-                    <img src="./assets/img/content11.webp" alt="" srcset="">
+                    <img src="./assets/img/content15.webp" alt="" srcset="">
                     <div class="video-info">
                     <img src="./assets/img/logocontent1.jpg" alt="" srcset="">
                     <div class="text-content">
@@ -291,7 +362,7 @@
                     </div>
                 </div>
                 <div class="div-content">
-                    <img src="./assets/img/content4.webp" alt="" srcset="">
+                    <img src="./assets/img/content16.webp" alt="" srcset="">
                     <div class="video-info">
                     <img src="./assets/img/logocontent2.jpg" alt="" srcset="">
                     <div class="text-content">
@@ -301,14 +372,56 @@
                     </div>
                     </div>
                 </div>
-            </div>
-            <div class="list-content">
+                <div class="div-content">
+                    <img src="./assets/img/content17.webp" alt="" srcset="">
+                    <div class="video-info">
+                    <img src="./assets/img/logocontent5.jpg" alt="" srcset="">
+                    <div class="text-content">
+                        <h3>Người VIỆT Nhỏ Bé Có Thể Vượt Qua Được Bài Kiểm Tra Thể Lực</h3>
+                        <p>Servet Gulnaroglu</p>
+                        <p><p>134 N lượt xem • 1 tháng trước</p></p>
+                    </div>
+                    </div>
+                </div>
+                <div class="div-content">
+                    <img src="./assets/img/content18.webp" alt="" srcset="">
+                    <div class="video-info">
+                    <img src="./assets/img/logocontent6.jpg" alt="" srcset="">
+                    <div class="text-content">
+                        <h3>Web Developer Reacts to Incredible Personal Websites // Personal Portfolios</h3>
+                        <p>Servet Gulnaroglu</p>
+                        <p><p>134 N lượt xem • 1 tháng trước</p></p>
+                    </div>
+                    </div>
+                </div>
+                <div class="div-content">
+                    <img src="./assets/img/content7.webp" alt="" srcset="">
+                    <div class="video-info">
+                    <img src="./assets/img/logocontent7.jpg" alt="" srcset="">
+                    <div class="text-content">
+                        <h3>Người VIỆT Nhỏ Bé Có Thể Vượt Qua Được Bài Kiểm Tra Thể Lực</h3>
+                        <p>Servet Gulnaroglu</p>
+                        <p><p>134 N lượt xem • 1 tháng trước</p></p>
+                    </div>
+                    </div>
+                </div>
+                <div class="div-content">
+                    <img src="./assets/img/content8.webp" alt="" srcset="">
+                    <div class="video-info">
+                    <img src="./assets/img/logocontent8.jpg" alt="" srcset="">
+                    <div class="text-content">
+                        <h3>(Paper Bride 3 #1) Đưa vợ Kiều Đồng về quê thăm nhà và cái kết bất ổn.</h3>
+                        <p>MixiGaming</p>
+                        <p><p>134 N lượt xem • 1 tháng trước</p></p>
+                    </div>
+                    </div>
+                </div>
                 <div class="div-content">
                     <img src="./assets/img/content10.webp" alt="" srcset="">
                     <div class="video-info">
                     <img src="./assets/img/logocontent12.jpg" alt="" srcset="">
                     <div class="text-content">
-                        <h3>Web Developer Reacts to Incredible Personal Websites // Personal Portfolios</h3>
+                        <h3>Người VIỆT Nhỏ Bé Có Thể Vượt Qua Được Bài Kiểm Tra Thể Lực</h3>
                         <p>Servet Gulnaroglu</p>
                         <p><p>134 N lượt xem • 1 tháng trước</p></p>
                     </div>

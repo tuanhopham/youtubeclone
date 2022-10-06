@@ -8,6 +8,12 @@ body{
     scroll-behavior: smooth;
 }
 /* Dùng chung */
+.hide{
+    display: none !important;
+}
+.one-hundred-percent{
+    width: 100% !important;
+}
 .ninety-five{
     width: 95% !important;
 }
@@ -22,6 +28,8 @@ a{
     align-items: center;
    
 }
+.search-mini-icon,
+.mic-mini,
 .icon{
     display: inline-block;
     width: 40px;
@@ -56,8 +64,13 @@ hr{
     z-index: 10;
     background-color:  #Ffff;
 }
+.nav-left{
+    
+    z-index: 30;
+}
 .nav-left .logo{
     padding-left: 16px;
+    
 }
 .nav-left .logo img
 {
@@ -71,6 +84,8 @@ hr{
     padding: 0px 10px 0px 16px;
     height: 40px;
     border: 1px solid #ccc;
+    min-width: 500px;
+    
 }
 
 .nav-middle .search-input input{
@@ -78,7 +93,8 @@ hr{
     padding: 0px;
     margin: 0px;
     height: auto;
-    width: 450px;
+    width: 100%;
+    
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -102,8 +118,11 @@ hr{
 .nav-middle .search-icon:hover{
    background: #F0F0F0;
 }
+.search-mini-icon,
+.mic-mini,
 .nav-middle .search-icon i{
     font-size: 20px;
+    cursor: pointer;
 }
 .nav-right div{
     margin-right: 10px;
@@ -132,7 +151,7 @@ hr{
     overflow: hidden;
     padding-left: 1%;
     padding-top: 80px;
-    z-index: 1;
+    z-index: 9;
     display: none;
 }
 .sidebar:hover {
@@ -173,7 +192,7 @@ hr{
 }
 .sidebar-min{
     background: #fff;
-    width: 5%;
+    width: 64px;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -204,8 +223,8 @@ hr{
     background: #E1E1E1;
 }
 .list-sidebar-min a p{
-    margin-top: 3px;
-    font-size: 12px;
+    margin-top: 4px;
+    font-size: 10px;
 }
 /* ------sidebar-end---------- */
 
@@ -241,18 +260,31 @@ hr{
     background-color: #F2F2F2;
     border-radius: 10px;
 }
+
+.scroll-menu a:hover{
+    background-color: #E5E5E5;
+}
+.scroll-menu a:first-child {
+    color: #F2F2F2;
+    background-color: #0f0f0f;
+}
 .container{
     width: 100%;
     margin-top: 40px;
 }
 .container .list-content{
     justify-content: space-between;
-    padding: 20px 20px 0;
-    display: flex;
-    
+    padding: 20px 20px 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 25px;
+    margin-bottom: 30px;
+   
 }
+
 .div-content{
-    width: 24%;
+    width: 100%;
     transition: transform .2s;
     background-color: #Ffff;
     border-radius: 10px;
@@ -309,12 +341,16 @@ hr{
 .short-list{
     width: 100%;
     padding: 10px 20px 0 20px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 25px;
+    grid-auto-rows: 0; 
+    overflow-y: hidden;
+    grid-template-rows: repeat(1, 1fr);
 }
 .short-list .short-item{
-    width: 12.5%;
+    width: 100%;
     margin: 0 8px;
 }
 .short-list .short-item:hover{
@@ -344,4 +380,14 @@ hr{
     font-size: 13px;
     color: #606060;
     padding-top: 3px;
+}
+
+.down{
+    text-align: center;
+    cursor: pointer;
+    margin: 0 ;
+    padding: 10px 0;
+}
+.down:hover{
+    background-color: #F2F2F2;
 }
