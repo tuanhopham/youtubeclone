@@ -214,6 +214,7 @@ hr{
     width: 85%;
     float: right;
     margin-top: 56px;
+    padding: 0 30px;
 }
 .scroll-menu{
     background: #Fff;
@@ -260,7 +261,7 @@ hr{
 .div-content:hover{
     transform: scale(1.3) translate(0, 30px);
     
-    transition-delay:0.5s;
+    transition-delay:0.2s;
     position:sticky;
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
