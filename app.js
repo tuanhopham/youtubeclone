@@ -34,7 +34,7 @@ downBtn.onclick = function(){
 //responsive Javastcrip
 
 function responsive(){
-   console.log(window.outerWidth)
+   
    if(window.outerWidth >830 &&window.outerWidth <1367 ){
       sidebar.classList.remove('show')  
       content.classList.add('ninety-five')
@@ -57,11 +57,19 @@ searchMoblie.onclick = function(){
    const navMiddle = document.querySelector('.nav-middle')
    const navLeft = document.querySelector('.nav-left')
    const navRight = document.querySelector('.nav-right')
-   console.log(navMiddle)
+   
+   
    navLeft.style.display = 'none'
    navRight.style.display = 'none'
    navMiddle.style.display = 'flex'
    
+   
+   // else{
+   //    navLeft.style.display = 'flex'
+   //    navRight.style.display = 'flex'
+   //    navMiddle.style.display = 'none'
+   //    isActive = false;
+   // }
 }
 responsive()
 
