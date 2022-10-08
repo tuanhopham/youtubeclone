@@ -45,18 +45,28 @@ function responsive(){
       sidebarMin.classList.remove('show')  
       content.classList.remove('ninety-five')
       content.classList.add('one-hundred-percent')
+      content.onclick = function(){
+         if(navMiddle.style.display = 'flex'){
+            navLeft.style.display = 'flex'
+            navRight.style.display = 'flex'
+            navMiddle.style.display = 'none'
+            
+         }
+      }
    }
    else{
       sidebar.classList.add('show')  
       content.classList.remove('ninety-five')
       content.classList.remove('one-hundred-percent')
+      
    }
   
 }
+const navMiddle = document.querySelector('.nav-middle')
+const navLeft = document.querySelector('.nav-left')
+const navRight = document.querySelector('.nav-right')
 searchMoblie.onclick = function(){
-   const navMiddle = document.querySelector('.nav-middle')
-   const navLeft = document.querySelector('.nav-left')
-   const navRight = document.querySelector('.nav-right')
+
    
    
    navLeft.style.display = 'none'
@@ -64,12 +74,9 @@ searchMoblie.onclick = function(){
    navMiddle.style.display = 'flex'
    
    
-   // else{
-   //    navLeft.style.display = 'flex'
-   //    navRight.style.display = 'flex'
-   //    navMiddle.style.display = 'none'
-   //    isActive = false;
-   // }
+   
 }
+
+
 responsive()
 

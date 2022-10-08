@@ -18,10 +18,10 @@
         display: none ;
     }
     .container .list-content{
-        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-columns: repeat(3,1fr);
     }
     .short-list{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-columns: repeat(5,1fr) ;
         row-gap: 0;
     }
 }
@@ -103,7 +103,7 @@
      }
      .nav-middle .search-input{
  
-         min-width: 300px;
+         min-width: 200px;
      }
      .hide{
          display: inline-block !important;
